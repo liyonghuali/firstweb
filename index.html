@@ -1,198 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+< html语言= “en” >
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>先进成图资料库</title>
-    <style>
-        /* 全局 */
-        a {
-            text-decoration: none;
-            color: inherit;
+<头>
+    <元字符集= “UTF-8” >
+    < meta名称= “视口” content = “宽度=设备宽度，initial-scale=1.0” >
+    < meta http-equiv = “X-UA-Compatible” 内容= “ie =edge” >
+    < title >先进成图资料库</ title >
+    <样式>
+        /*例外*/
+
+            文字修饰：无；
+            颜色： 继承；
         }
 
-        a:hover,
-        a:focus {
-            color: blue;
-            font-size: 20px;
+
+
+            颜色：蓝色；
+            字体大小：20px；
         }
 
         /* 侧边栏 */
-        #left-box {
-            height: 800px;
-            width: 325px;
-            background: linear-gradient(to bottom, #F0ECEC, #525252)
+
+            高度：800px；
+            宽度：325px；
+            背景：线性浏览（至底部，#F0ECEC，#525252）
         }
 
-        #toubox {
-            width: 270px;
-            height: 76px;
-            background: white;
-            position: relative;
-            top: 80px;
-            left: 30px;
+
+            宽度：270px；
+            高度：76像素；
+            背景：白色；
+            位置：相对；
+            顶部：80像素；
+            左边：30像素；
         }
 
         .touxiang {
-            width: 76px;
-            height: 76px;
-            /* background: pink; */
-            display: inline-block;
-            background-image: url('../XD/用户.png');
-            background-size: 97%;
+            宽度：76px；
+            高度：76px；
+            /*背景： 粉红色；*/
+            显示：内联块；
+            background图片: url('./XD/用户.png');
+            背景尺寸：97%；
         }
 
         div .ming {
-            /* background: rgba(46, 161, 46, 0.699); */
-            position: relative;
-            top: -40px;
-            left: 2px;
-            font-size: 20px;
-            font-weight: bold;
+            /*背景：rgba(46, 161, 46, 0.699); */
+            位置：相对；
+            顶部：-40px；
+            左边：2px；
+            字体大小：20px；
+            字体粗细：粗体；
         }
 
-        div .phone {
-            /* background: rgba(46, 161, 46, 0.699); */
-            position: relative;
-            top: -40px;
-            left: 82px;
-            display: block;
-            font-size: 15px;
-            font-weight: 600;
+        div.电话{
+            /*背景：rgba(46, 161, 46, 0.699); */
+            位置：相对；
+            顶部：-40px；
+            左边：82px；
+            显示：块；
+            字体大小：15px；
+            字体粗细：600；
         }
 
-        .line {
-            border-top: 3px solid #000;
-            position: relative;
-            top: 100px;
-            height: 500px;
-            /* background-color: #F5FEF8; */
+        。線 {
+            顶部边框：3px实线#000；
+            位置：相对；
+            顶部：100px；
+            高度：500px；
+            /*背景颜色：#F5FEF8；*/
         }
 
         .line ul li div {
-            width: 250px;
-            height: 70px;
-            background: linear-gradient(to bottom, #525252, #F0ECEC);
-            position: relative;
-            z-index: 1000;
+            宽度：250px；
+            高度：70px；
+            背景：线性浏览（至底部，#525252，#F0ECEC）；
+            位置：相对；
+            z索引：1000；
         }
 
         .line a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70px;
+            显示：弹性；
+            对齐内容：居中；
+            直线项目：居中；
+            高度：70px；
         }
 
-        .out {
-            width: 50px;
-            height: 50px;
-            background-image: url('../XD/退出.png');
-            /* background: #000; */
-            position: relative;
-            left: 50px;
-            background-size: 100%;
-            display: inline-block;
+        出去 {
+            宽度：50px；
+            高度：50px；
+            background-image: url('./XD/退出.png');
+            /*背景：#000；*/
+            位置：相对；
+            左边：50px；
+            背景尺寸：100%；
+            显示：内联块；
         }
 
-        .tuichu {
-            position: relative;
-            top: -12px;
-            left: 60px;
-            font-size: 25px;
-            font-weight: bold;
+        .退出 {
+            位置：相对；
+            顶部：-12px；
+            左边：60px；
+            字体大小：25px；
+            字体粗细：粗体；
         }
 
-        .tuiout:hover {
-            background: #F5FEF8;
-            cursor: pointer;
-            color: blue;
+        .tuiout:悬停{
+            背景：#F5FEF8；
+            光标：指针；
+            颜色：蓝色；
         }
 
         /* 文件内容 */
         h1 {
-            position: absolute;
-            top: 30px;
-            left: 700px;
+            位置：绝对；
+            顶部：30px；
+            左边：700px；
         }
 
-        #form {
-            height: 500px;
-            width: 969px;
-            background: linear-gradient(to bottom, #F0ECEC, #525252);
-            position: absolute;
-            top: 152px;
-            right: 15px;
-            border-radius: 20px;
+        ＃形式 {
+            高度：500px；
+            宽度：969px；
+            背景：线性浏览（至底部，#F0ECEC，#525252）；
+            位置：绝对；
+            顶部：152px；
+            右：15px；
+            边框半径：20px；
         }
 
         ul {
-            list-style-type: none;
+            列表样式类型：无；
         }
 
         ul li div {
-            height: 90px;
-            width: 900px;
-            background: #F5FEF8;
-            /* border: 2px solid #ff0000; */
-            border-radius: 10px;
-            margin: 4px;
+            高度：90px；
+            宽度：900px；
+            背景：#F5FEF8；
+            /*边框：2px实线#ff0000; */
+            边框半径：10px；
+            边距：4px；
         }
-    </style>
-</head>
+    </样式>
+</头>
 
-<body>
+<正文>
     <!-- 侧边栏 -->
-    <div id="left-box">
-        <div id="toubox">
-            <div class="touxiang"></div>
-            <span class="ming">风潜能</span>
-            <span class="phone">3056996198</span>
-        </div>
-        <div class="line">
-            <ul>
-                <li>
-                    <div><a href="https://edu.currentcad.com/login">前往卡伦特</a></div>
-                </li>
-                <li>
-                    <div><a href="https://www.mfcad.com/tuzhi/index.php?m=member">沐风网</a></div>
-                </li>
-                <li>
-                    <div><a href="https://portal.cdtu.edu.cn/">学校教务系统</a></div>
-                </li>
-                <li>
-                    <div><a href="https://pan.baidu.com/s/1sTqbQmYE-YwhBN9iL2hXOg?pwd=6789">SOLIDWORKS 下载</a></div>
-                </li>
-            </ul>
-        </div>
-        <div class="tuiout">
-            <div class="out"></div>
-            <span class="tuichu"><a href="./login.html">退出</a></span>
-        </div>
+    < div id = “左框”     >
+        < div id = “toubox”     >
+            < div class = “        touxiang        ”        >        </ div >
+            < span class = "ming"       >风潜能</ span >
+            < span class = “ 电话   ”   > 3056996198 </span>​​
+        </ div >
+        < div class = “line”       >
+            < ul >
+                <里>
+                    < div >       < a href = "https://edu.currentcad.com/login"       >前往卡伦特</ a >       </ div >
+                </李>
+                <里>
+                    < div >  < a href = "https://www.mfcad.com/tuzhi/index.php?m=member" >沐风网</ a >    </ div >        
+                </李>
+                <里>
+                    < div >      < a href = "https://portal.cdtu.edu.cn/"      >学校教务系统</ a >      </ div >
+                </李>
+                <里>
+                    < div >      < a href = "https://pan.baidu.com/s/1sTqbQmYE-YwhBN9iL2hXOg?pwd=6789"      > SOLIDWORKS下载</ a >      </ div >
+                </李>
+            </ ul >
+        </ div >
+        < div class = “tuiout”      >
+            < div class = “out”      >      </ div >
+            < span class = "tuichu"    >    < a href = "./login.html"    >退出</ a >    </ span >
+        </ div >
     </div>
     <!-- 内容 -->
-    <h1>先进成图资料库</h1>
-    <div id="form">
-        <ul>
-            <li>
-                <div></div>
-            </li>
-            <li>
-                <div></div>
-            </li>
-            <li>
-                <div></div>
-            </li>
-            <li>
-                <div></div>
-            </li>
-            <li>
-                <div></div>
-            </li>
-        </ul>
+    < h1 >先进成图资料库</ h1 >
+    < div id = “表格” >
+        < ul >
+            <里>
+                < div >  </ div >
+            </李>
+            <里>
+                < div >  </ div >
+            </李>
+            <里>
+                < div >  </ div >
+            </李>
+            <里>
+                < div >  </ div >
+            </李>
+            <里>
+                < div >  </ div >
+            </李>
+        </ ul >
     </div>
-</body>
+</正文>
 
-</html>
+</html>​​
