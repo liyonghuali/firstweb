@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>先进成图资料库</title>
+    <style>
+        /* 全局 */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover,
+        a:focus {
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* 侧边栏 */
+        #left-box {
+            height: 800px;
+            width: 325px;
+            background: linear-gradient(to bottom, #F0ECEC, #525252)
+        }
+
+        #toubox {
+            width: 270px;
+            height: 76px;
+            background: white;
+            position: relative;
+            top: 80px;
+            left: 30px;
+        }
+
+        .touxiang {
+            width: 76px;
+            height: 76px;
+            /* background: pink; */
+            display: inline-block;
+            background-image: url('../XD/用户.png');
+            background-size: 97%;
+        }
+
+        div .ming {
+            /* background: rgba(46, 161, 46, 0.699); */
+            position: relative;
+            top: -40px;
+            left: 2px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        div .phone {
+            /* background: rgba(46, 161, 46, 0.699); */
+            position: relative;
+            top: -40px;
+            left: 82px;
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .line {
+            border-top: 3px solid #000;
+            position: relative;
+            top: 100px;
+            height: 500px;
+            /* background-color: #F5FEF8; */
+        }
+
+        .line ul li div {
+            width: 250px;
+            height: 70px;
+            background: linear-gradient(to bottom, #525252, #F0ECEC);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .line a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+
+        .out {
+            width: 50px;
+            height: 50px;
+            background-image: url('../XD/退出.png');
+            /* background: #000; */
+            position: relative;
+            left: 50px;
+            background-size: 100%;
+            display: inline-block;
+        }
+
+        .tuichu {
+            position: relative;
+            top: -12px;
+            left: 60px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .tuiout:hover {
+            background: #F5FEF8;
+            cursor: pointer;
+            color: blue;
+        }
+
+        /* 文件内容 */
+        h1 {
+            position: absolute;
+            top: 30px;
+            left: 700px;
+        }
+
+        #form {
+            height: 500px;
+            width: 969px;
+            background: linear-gradient(to bottom, #F0ECEC, #525252);
+            position: absolute;
+            top: 152px;
+            right: 15px;
+            border-radius: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li div {
+            height: 90px;
+            width: 900px;
+            background: #F5FEF8;
+            /* border: 2px solid #ff0000; */
+            border-radius: 10px;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 侧边栏 -->
+    <div id="left-box">
+        <div id="toubox">
+            <div class="touxiang"></div>
+            <span class="ming">风潜能</span>
+            <span class="phone">3056996198</span>
+        </div>
+        <div class="line">
+            <ul>
+                <li>
+                    <div><a href="https://edu.currentcad.com/login">前往卡伦特</a></div>
+                </li>
+                <li>
+                    <div><a href="https://www.mfcad.com/tuzhi/index.php?m=member">沐风网</a></div>
+                </li>
+                <li>
+                    <div><a href="https://portal.cdtu.edu.cn/">学校教务系统</a></div>
+                </li>
+                <li>
+                    <div><a href="https://pan.baidu.com/s/1sTqbQmYE-YwhBN9iL2hXOg?pwd=6789">SOLIDWORKS 下载</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="tuiout">
+            <div class="out"></div>
+            <span class="tuichu"><a href="./login.html">退出</a></span>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <h1>先进成图资料库</h1>
+    <div id="form">
+        <ul>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
