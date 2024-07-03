@@ -8,6 +8,12 @@
     <title>先进成图资料库</title>
     <style>
         /* 全局 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         a {
             text-decoration: none;
             color: inherit;
@@ -21,9 +27,15 @@
 
         /* 侧边栏 */
         #left-box {
-            height: 800px;
+            height: 100vh;
             width: 325px;
             background: linear-gradient(to bottom, #F0ECEC, #525252)
+        }
+
+        @media (max-width:1152px) {
+            #left-box {
+                width: 10px;
+            }
         }
 
         #toubox {
@@ -77,6 +89,26 @@
             background: linear-gradient(to bottom, #525252, #F0ECEC);
             position: relative;
             z-index: 1000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width:1152px) {
+            .line ul li div {
+                width: 100px;
+            }
+        }
+
+        @media (max-width:556px) {
+            .line ul li div {
+                width: 50px;
+                font-size: 10px;
+            }
+
+            .line ul li div:hover {
+                font-size: 12px;
+            }
         }
 
         .line a {
@@ -95,6 +127,12 @@
             left: 50px;
             background-size: 100%;
             display: inline-block;
+        }
+
+        @media (max-width:556px) {
+            .out {
+                display: none;
+            }
         }
 
         .tuichu {
@@ -120,7 +158,7 @@
 
         #form {
             height: 500px;
-            width: 969px;
+            width: 70%;
             background: linear-gradient(to bottom, #F0ECEC, #525252);
             position: absolute;
             top: 152px;
@@ -134,7 +172,7 @@
 
         ul li div {
             height: 90px;
-            width: 900px;
+            width: 95%;
             background: #F5FEF8;
             /* border: 2px solid #ff0000; */
             border-radius: 10px;
